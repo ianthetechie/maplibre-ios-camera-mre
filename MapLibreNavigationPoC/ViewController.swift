@@ -18,9 +18,9 @@ class ViewController: UIViewController {
 
     @IBAction func startNavigation() {
         // Request the route via an API
-        let routeOptions = NavigationRouteOptions(locations: [
-            CLLocation(latitude: 34.92159461931601, longitude: -110.13926293762108),
-            CLLocation(latitude: 35.29808448233627, longitude: -109.13514420842715)
+        let routeOptions = NavigationRouteOptions(coordinates: [
+            CLLocationCoordinate2D(latitude: 34.92159461931601, longitude: -110.13926293762108),
+            CLLocationCoordinate2D(latitude: 35.29808448233627, longitude: -109.13514420842715)
         ])
         getDirections(routeOptions: routeOptions) { route in
             // TODO: Don't force unwrap!!
@@ -44,10 +44,11 @@ class ViewController: UIViewController {
             vc.modalPresentationStyle = .fullScreen
 
             self.present(vc, animated: true, completion: {
-                // TODO: None of this group seem to have any effect
+                // FIXME: The logo view always returns when hitting the resume button (after panning around)
                 vc.mapView!.logoView.isHidden = true
-                vc.mapView!.attributionButton.isHidden = true
-                vc.mapView!.setUserTrackingMode(.followWithCourse, animated: true, completionHandler: nil)
+
+                // FIXME: Can't seem to get the camera to follow the user properly at all; something is broken.
+//                vc.mapView!.setUserTrackingMode(.followWithCourse, animated: true, completionHandler: nil)
             })
         }
         }

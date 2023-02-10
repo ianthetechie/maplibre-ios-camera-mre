@@ -1,2 +1,1 @@
-github "maplibre/maplibre-navigation-ios" ~> 1.0.7
-
+github "stadiamaps/maplibre-navigation-ios" "main"
