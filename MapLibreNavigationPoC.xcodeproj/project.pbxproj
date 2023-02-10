@@ -13,7 +13,51 @@
 		E9E25856299177070083FEAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E25854299177070083FEAD /* Main.storyboard */; };
 		E9E25858299177080083FEAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E25857299177080083FEAD /* Assets.xcassets */; };
 		E9E2585B299177080083FEAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E25859299177080083FEAD /* LaunchScreen.storyboard */; };
+		E9E25863299177C80083FEAD /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E25862299177C80083FEAD /* Config.swift */; };
+		E9E258652991785B0083FEAD /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = E9E258642991785B0083FEAD /* Cartfile */; };
+		E9E25868299178A40083FEAD /* Mapbox in Frameworks */ = {isa = PBXBuildFile; productRef = E9E25867299178A40083FEAD /* Mapbox */; };
+		E9E2587329917A470083FEAD /* MapboxMobileEvents.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E2586A29917A450083FEAD /* MapboxMobileEvents.xcframework */; };
+		E9E2587429917A470083FEAD /* MapboxMobileEvents.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9E2586A29917A450083FEAD /* MapboxMobileEvents.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9E2587529917A470083FEAD /* MapboxGeocoder.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E2586B29917A450083FEAD /* MapboxGeocoder.xcframework */; };
+		E9E2587629917A470083FEAD /* MapboxGeocoder.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9E2586B29917A450083FEAD /* MapboxGeocoder.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9E2587729917A470083FEAD /* Turf.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E2586C29917A460083FEAD /* Turf.xcframework */; };
+		E9E2587829917A470083FEAD /* Turf.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9E2586C29917A460083FEAD /* Turf.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9E2587929917A470083FEAD /* MapboxDirections.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E2586D29917A460083FEAD /* MapboxDirections.xcframework */; };
+		E9E2587A29917A470083FEAD /* MapboxDirections.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9E2586D29917A460083FEAD /* MapboxDirections.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9E2587B29917A470083FEAD /* MapboxCoreNavigation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E2586E29917A460083FEAD /* MapboxCoreNavigation.xcframework */; };
+		E9E2587C29917A470083FEAD /* MapboxCoreNavigation.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9E2586E29917A460083FEAD /* MapboxCoreNavigation.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9E2587D29917A470083FEAD /* Solar.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E2586F29917A460083FEAD /* Solar.xcframework */; };
+		E9E2587E29917A470083FEAD /* Solar.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9E2586F29917A460083FEAD /* Solar.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9E2587F29917A470083FEAD /* Polyline.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E2587029917A460083FEAD /* Polyline.xcframework */; };
+		E9E2588029917A480083FEAD /* Polyline.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9E2587029917A460083FEAD /* Polyline.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9E2588129917A480083FEAD /* MapboxNavigation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E2587129917A460083FEAD /* MapboxNavigation.xcframework */; };
+		E9E2588229917A480083FEAD /* MapboxNavigation.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9E2587129917A460083FEAD /* MapboxNavigation.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9E2588329917A480083FEAD /* MapboxSpeech.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E2587229917A470083FEAD /* MapboxSpeech.xcframework */; };
+		E9E2588429917A480083FEAD /* MapboxSpeech.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9E2587229917A470083FEAD /* MapboxSpeech.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9E2588729917ADA0083FEAD /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2588629917ADA0083FEAD /* Helpers.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9E2588529917A480083FEAD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E9E2588429917A480083FEAD /* MapboxSpeech.xcframework in Embed Frameworks */,
+				E9E2587829917A470083FEAD /* Turf.xcframework in Embed Frameworks */,
+				E9E2587629917A470083FEAD /* MapboxGeocoder.xcframework in Embed Frameworks */,
+				E9E2588229917A480083FEAD /* MapboxNavigation.xcframework in Embed Frameworks */,
+				E9E2587C29917A470083FEAD /* MapboxCoreNavigation.xcframework in Embed Frameworks */,
+				E9E2587E29917A470083FEAD /* Solar.xcframework in Embed Frameworks */,
+				E9E2587A29917A470083FEAD /* MapboxDirections.xcframework in Embed Frameworks */,
+				E9E2587429917A470083FEAD /* MapboxMobileEvents.xcframework in Embed Frameworks */,
+				E9E2588029917A480083FEAD /* Polyline.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E9E2584B299177070083FEAD /* MapLibreNavigationPoC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapLibreNavigationPoC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +68,18 @@
 		E9E25857299177080083FEAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9E2585A299177080083FEAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9E2585C299177080083FEAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9E25862299177C80083FEAD /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		E9E258642991785B0083FEAD /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		E9E2586A29917A450083FEAD /* MapboxMobileEvents.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapboxMobileEvents.xcframework; path = Carthage/Build/MapboxMobileEvents.xcframework; sourceTree = "<group>"; };
+		E9E2586B29917A450083FEAD /* MapboxGeocoder.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapboxGeocoder.xcframework; path = Carthage/Build/MapboxGeocoder.xcframework; sourceTree = "<group>"; };
+		E9E2586C29917A460083FEAD /* Turf.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Turf.xcframework; path = Carthage/Build/Turf.xcframework; sourceTree = "<group>"; };
+		E9E2586D29917A460083FEAD /* MapboxDirections.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapboxDirections.xcframework; path = Carthage/Build/MapboxDirections.xcframework; sourceTree = "<group>"; };
+		E9E2586E29917A460083FEAD /* MapboxCoreNavigation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapboxCoreNavigation.xcframework; path = Carthage/Build/MapboxCoreNavigation.xcframework; sourceTree = "<group>"; };
+		E9E2586F29917A460083FEAD /* Solar.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Solar.xcframework; path = Carthage/Build/Solar.xcframework; sourceTree = "<group>"; };
+		E9E2587029917A460083FEAD /* Polyline.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Polyline.xcframework; path = Carthage/Build/Polyline.xcframework; sourceTree = "<group>"; };
+		E9E2587129917A460083FEAD /* MapboxNavigation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapboxNavigation.xcframework; path = Carthage/Build/MapboxNavigation.xcframework; sourceTree = "<group>"; };
+		E9E2587229917A470083FEAD /* MapboxSpeech.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapboxSpeech.xcframework; path = Carthage/Build/MapboxSpeech.xcframework; sourceTree = "<group>"; };
+		E9E2588629917ADA0083FEAD /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +87,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E2587729917A470083FEAD /* Turf.xcframework in Frameworks */,
+				E9E2587D29917A470083FEAD /* Solar.xcframework in Frameworks */,
+				E9E25868299178A40083FEAD /* Mapbox in Frameworks */,
+				E9E2587529917A470083FEAD /* MapboxGeocoder.xcframework in Frameworks */,
+				E9E2587329917A470083FEAD /* MapboxMobileEvents.xcframework in Frameworks */,
+				E9E2587B29917A470083FEAD /* MapboxCoreNavigation.xcframework in Frameworks */,
+				E9E2588329917A480083FEAD /* MapboxSpeech.xcframework in Frameworks */,
+				E9E2588129917A480083FEAD /* MapboxNavigation.xcframework in Frameworks */,
+				E9E2587929917A470083FEAD /* MapboxDirections.xcframework in Frameworks */,
+				E9E2587F29917A470083FEAD /* Polyline.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +106,10 @@
 		E9E25842299177070083FEAD = {
 			isa = PBXGroup;
 			children = (
+				E9E258642991785B0083FEAD /* Cartfile */,
 				E9E2584D299177070083FEAD /* MapLibreNavigationPoC */,
 				E9E2584C299177070083FEAD /* Products */,
+				E9E2586929917A450083FEAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +127,30 @@
 				E9E2584E299177070083FEAD /* AppDelegate.swift */,
 				E9E25850299177070083FEAD /* SceneDelegate.swift */,
 				E9E25852299177070083FEAD /* ViewController.swift */,
+				E9E25862299177C80083FEAD /* Config.swift */,
+				E9E2588629917ADA0083FEAD /* Helpers.swift */,
 				E9E25854299177070083FEAD /* Main.storyboard */,
 				E9E25857299177080083FEAD /* Assets.xcassets */,
 				E9E25859299177080083FEAD /* LaunchScreen.storyboard */,
 				E9E2585C299177080083FEAD /* Info.plist */,
 			);
 			path = MapLibreNavigationPoC;
+			sourceTree = "<group>";
+		};
+		E9E2586929917A450083FEAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9E2586E29917A460083FEAD /* MapboxCoreNavigation.xcframework */,
+				E9E2586D29917A460083FEAD /* MapboxDirections.xcframework */,
+				E9E2586B29917A450083FEAD /* MapboxGeocoder.xcframework */,
+				E9E2586A29917A450083FEAD /* MapboxMobileEvents.xcframework */,
+				E9E2587129917A460083FEAD /* MapboxNavigation.xcframework */,
+				E9E2587229917A470083FEAD /* MapboxSpeech.xcframework */,
+				E9E2587029917A460083FEAD /* Polyline.xcframework */,
+				E9E2586F29917A460083FEAD /* Solar.xcframework */,
+				E9E2586C29917A460083FEAD /* Turf.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,12 +163,16 @@
 				E9E25847299177070083FEAD /* Sources */,
 				E9E25848299177070083FEAD /* Frameworks */,
 				E9E25849299177070083FEAD /* Resources */,
+				E9E2588529917A480083FEAD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MapLibreNavigationPoC;
+			packageProductDependencies = (
+				E9E25867299178A40083FEAD /* Mapbox */,
+			);
 			productName = MapLibreNavigationPoC;
 			productReference = E9E2584B299177070083FEAD /* MapLibreNavigationPoC.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +201,9 @@
 				Base,
 			);
 			mainGroup = E9E25842299177070083FEAD;
+			packageReferences = (
+				E9E25866299178A40083FEAD /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */,
+			);
 			productRefGroup = E9E2584C299177070083FEAD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +220,7 @@
 			files = (
 				E9E2585B299177080083FEAD /* LaunchScreen.storyboard in Resources */,
 				E9E25858299177080083FEAD /* Assets.xcassets in Resources */,
+				E9E258652991785B0083FEAD /* Cartfile in Resources */,
 				E9E25856299177070083FEAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +235,8 @@
 				E9E25853299177070083FEAD /* ViewController.swift in Sources */,
 				E9E2584F299177070083FEAD /* AppDelegate.swift in Sources */,
 				E9E25851299177070083FEAD /* SceneDelegate.swift in Sources */,
+				E9E2588729917ADA0083FEAD /* Helpers.swift in Sources */,
+				E9E25863299177C80083FEAD /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +386,7 @@
 				DEVELOPMENT_TEAM = PB54J8DVJD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MapLibreNavigationPoC/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app provides turn-by-turn navigation";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,6 +415,7 @@
 				DEVELOPMENT_TEAM = PB54J8DVJD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MapLibreNavigationPoC/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app provides turn-by-turn navigation";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -358,6 +456,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E9E25866299178A40083FEAD /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maplibre/maplibre-gl-native-distribution";
+			requirement = {
+				kind = exactVersion;
+				version = 5.12.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E9E25867299178A40083FEAD /* Mapbox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9E25866299178A40083FEAD /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */;
+			productName = Mapbox;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E9E25843299177070083FEAD /* Project object */;
 }
